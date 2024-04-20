@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+   <!-- HEADER -->
+   <header class="z-50 w-full h-16 fixed bg-primary text-txt flex items-center px-10">
+      <ul class="flex items-center justify-center font-bold space-x-4 md:space-x-8">
+         <li class="hover:text-secodary cursor-pointer transition-all duration-300"><a href="#home">HOME</a></li>
+         <li class="hover:text-secodary cursor-pointer transition-all duration-300"><a href="#product">PRODUCTS</a></li>
+         <li class="hover:text-secodary cursor-pointer transition-all duration-300"><a href="#category">CATEGORY</a></li>
+         <li class="hover:text-secodary cursor-pointer transition-all duration-300"><a href="#contact">CONTACT</a></li>
+      </ul>
+   </header>
+
+   <!-- HOME -->
+   <div id="home" class="w-full min-h-[100vh] bg-secodary flex items-center justify-center">
+      <div class="w-full border-2 border-primary h-[100vh] p-4 relative md:w-[80%] lg:w-[70%] md:h-[500px] md:rounded-2xl overflow-hidden">
+         <img class="w-full h-full absolute top-0 left-0 object-cover" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+         <div class="absolute z-10 top-0 left-0 font-bold w-full h-full flex flex-col items-center justify-center bg-secodary/70 px-8 gap-7 ">
+            <h1 class="text-primary text-4xl md:text-7xl font-bold uppercase ">Delicakes</h1>
+            <p class="text-center text-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rerum.</p>
+            <button class="px-5 border-2 py-2 rounded-xl border-primary text-primary hover:bg-primary hover:text-secodary transition-all duration-300">Shop Now</button>
+         </div>
+      </div>
+   </div>
+
+      <!-- PRODUCT -->
+      <div id="product" class="w-full min-h-[100vh] bg-primary/70 text-primary flex  items-center justify-center">
+         <div id="box" class="w-[90%] pt-16 flex flex-col lg:flex-row relative gap-4 mx-auto border-2  rounded-md overflow-hidden p-4 bg-secodary">
+            <div class="w-full p-4 absolute top-0 left-0 flex items-center justify-between">
+               <h1 class="font-bold text-xl md:text-2xl">On Selling Products</h1>
+               <p class="text-xs cursor-pointer hover:underline transition-all duration-300">See all Products</p>
+            </div>
+            <div class="w-[400px] md:w-[350px] h-[500px] relative mx-auto md:mx-auto lg:mx-0">
+               <img class="object-cover w-full h-full absolute top-0 left-0 rounded-xl" src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="absolute w-full h-full bg-secodary/50 flex flex-col gap-4 items-center justify-end pb-8" >
+                  <h1 class="uppercase text-txt font-bold text-2xl lg:text-3xl">sale offer!</h1>
+                  <p class="uppercase text-txt  text-2xl font-bold border-2 rounded-md px-8 py-3">50%</p>
+                  <p class="uppercase text-txt  ">limited time valid</p>
+               </div>
+            </div>
+   
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+               <!-- box1 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">Chocolate Cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$200 <span class="line-through text-xs">$300</span></p>
+                  </div>
+               </div>
+               <!-- box2 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FrZXN8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">CupCake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$80 <span class="line-through text-xs">$150</span></p>
+                  </div >
+               </div>
+               <!-- box3 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNha2VzfGVufDB8fDB8fHww" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">specail cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$450 <span class="line-through text-xs">$500</span></p>
+                  </div>
+               </div>
+               <!-- box4 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">drink cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$150 <span class="line-through text-xs">$200</span></p>
+                  </div>
+               </div>
+               <!-- box5 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://plus.unsplash.com/premium_photo-1678198828975-02016abf2c5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">berry cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$70 <span class="line-through text-xs">$120</span></p>
+                  </div>
+               </div>
+               <!-- box6 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">square cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$100 <span class="line-through text-xs">$150</span></p>
+                  </div>
+               </div>
+               <!-- box7 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">Dessert cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$120 <span class="line-through text-xs">$150</span></p>
+                  </div>
+               </div>
+               <!-- box8 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">flavored cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$250 <span class="line-through text-xs">$300</span></p>
+                  </div>
+               </div>
+               <!-- box9 -->
+               <div class="shadow-sm shadow-primary h-[150px]  flex">
+                  <img class="w-[150px] object-cover" src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+                  <div class="p-4 flex flex-col justify-center">
+                     <h1 class="text-lg uppercase font-bold">wedding cake</h1>
+                     <p>Lorem ipsum dolor sit amet.</p>
+                     <p class="font-bold">$300 <span class="line-through text-xs">$500</span></p>
+                  </div>
+               </div>
+   
+            </div>
+   
+      
+         </div>
+      </div>
+      
+
+   <!-- CATEGORY -->
+   <div id="category" class="w-full min-h-[100vh] bg-secodary flex items-center justify-center">
+      <div id="container" class="w-full md:w-[90%] lg:w-[80%] mx-auto gap-4 m-4 px-12 md:px-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+         <div class="box cursor-pointer hover:scale-105 transition-all duration-300 p-4 bg-primary/95 rounded-xl overflow-hidden  border-2 border-primary flex flex-col gap-2">
+            <img class="object-cover rounded-2xl h-[200px] md:h-[250px] " src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+            <h1 class="font-bold px-2 text-txt text-2xl md:text-3xl">Cupcake</h1>
+            <p class="text-txt text-base px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quidem.</p>
+            <p class="px-2 text-base font-bold md:text-2xl text-txt">$100</p>
+         </div>
+
+         <div class="box cursor-pointer hover:scale-105 transition-all duration-300 p-4 bg-primary/95 rounded-xl overflow-hidden border-2 border-primary flex flex-col gap-2">
+            <img class="object-cover rounded-2xl h-[200px] md:h-[250px]" src="https://images.unsplash.com/photo-1488477304112-4944851de03d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+            <h1 class="font-bold px-2 text-txt text-2xl md:text-3xl">Fruit Cake</h1>
+            <p class="text-txt text-base px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quidem.</p>
+            <p class="px-2 text-base font-bold md:text-2xl text-txt">$250</p>
+         </div>
+
+         <div class="box cursor-pointer hover:scale-105 transition-all duration-300 p-4 bg-primary/95 rounded-xl overflow-hidden  border-2 border-primary flex flex-col gap-2">
+            <img class="object-cover rounded-2xl h-[200px] md:h-[250px]" src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+            <h1 class="font-bold px-2 text-txt text-2xl md:text-3xl">Chocolate Cake</h1>
+            <p class="text-txt text-base px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quidem.</p>
+            <p class="px-2 text-base font-bold md:text-2xl text-txt">$500</p>
+         </div>
+
+         <div class="box cursor-pointer hover:scale-105 transition-all duration-300 p-4 bg-primary/95 rounded-xl overflow-hidden  border-2 border-primary flex flex-col gap-2">
+            <img class="object-cover rounded-2xl h-[200px] md:h-[250px]" src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <h1 class="font-bold px-2 text-txt text-2xl md:text-3xl">Strawberry Cake</h1>
+            <p class="text-txt text-base px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quidem.</p>
+            <p class="px-2 text-base font-bold md:text-2xl text-txt">$400</p>
+         </div>
+
+      
+
+      </div>
+   </div>
+
+   <!-- CONTACT -->
+   <div id="contact" class="w-full min-h-[100vh] bg-primary/70 text-primary flex items-center justify-center">
+
+      <form action="" class="w-full md:w-[500px] p-4 mx-4 gap-4 rounded-3xl bg-secodary h-[500px] flex flex-col items-center justify-center">
+         <h1 class="text-3xl lg:text-start w-full ">Get in touch</h1>
+         <div class="w-full grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <input class="outline-none border-none p-3 rounded-md text-lg text-secodary" type="text" placeholder="Your Fullname">
+            <input class="outline-none border-none p-3 rounded-md text-lg text-secodary" type="text" placeholder="Your Number">
+         </div>
+
+         <input class="w-full outline-none border-none p-3 rounded-md text-lg text-secodary " type="text" placeholder="Enter the cake name">
+
+         <input class="w-full lg:h-[200px] outline-none border-none p-3 rounded-md text-lg text-secodary " type="text" placeholder="Send message">
+         <button class="border-2 px-4 py-2 my-4 rounded-2xl hover:bg-primary hover:text-secodary transition-all duration-300 font-bold">Send Message</button>
+      </form>
+
+   </div>
+
+
+</body>
+</html>
